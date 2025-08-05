@@ -8,8 +8,8 @@ import Image from "next/image";
 
 const playfair = Playfair_Display({ subsets: ["latin"], weight: "700" });
 const format = {
-  notation: "standard",
-  roundingMode: "trunc",
+  notation: "standard" as const,
+  roundingMode: "trunc" as const,
 };
 
 const statsData = [
